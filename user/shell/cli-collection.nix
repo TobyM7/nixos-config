@@ -28,8 +28,6 @@
     lsd
     macchanger
     openrgb
-    riseup-vpn
-    calyx-vpn
     feh
     pciutils
     (pkgs.writeShellScriptBin "airplane-mode" ''
