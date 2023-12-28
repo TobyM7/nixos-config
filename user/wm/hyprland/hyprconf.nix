@@ -219,6 +219,7 @@ bind = SUPER CTRL, down, resizeactive, 0 20
        bind=SUPER,code:21,exec,pypr zoom
        bind=SUPER,code:21,exec,hyprctl reload
 bind = SUPER, T, exec, thunar
+bind = SUPERSHIFT, T, exec, ~/.config/nix-os/rofi.sh 
 bind = SUPER, O, exec, rofi -show drun
 bind = SUPER, W, exec,  swww img $(find ~/Documents/wallpapers/ -type f | shuf -n1) --transition-type wipe  
 

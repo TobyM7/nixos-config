@@ -7,6 +7,8 @@ let
   backgroundSha256 = builtins.readFile (./. + "../../../themes/"+("/"+theme)+"/backgroundsha256.txt");
 in
 {
+
+  home.file.".currenttheme".text = theme;
   stylix.autoEnable = false;
   stylix.polarity = themePolarity;
   stylix.image = pkgs.fetchurl {
