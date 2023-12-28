@@ -47,7 +47,6 @@
     pictures = null;
     templates = null;
     music = null;
-    sync = null;
   };
   xdg.mime.enable = true;
   xdg.mimeApps.enable = true;

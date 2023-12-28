@@ -14,7 +14,6 @@ exec-once = dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLA
       exec-once = pypr
       exec-once = nm-applet
       exec-once = blueman-applet
-      exec-once = GOMAXPROCS=1 syncthing --no-browser
       exec-once = protonmail-bridge --noninteractive
       exec-once = waybar
       exec-once = emacs --daemon
