@@ -32,10 +32,8 @@
     dmenu
     rofi
     git
-    syncthing
   ];
 
-  services.syncthing.enable = true;
 
   xdg.enable = true;
   xdg.userDirs = {
@@ -45,9 +43,11 @@
     documents = "${config.home.homeDirectory}/Documents";
     desktop = null;
     publicShare = null;
-    extraConfig = {
-     #XDG_DOTFILES_DIR = "${config.home.homeDirectory}/.dotfiles";
-    };
+    videos = null;
+    pictures = null;
+    templates = null;
+    music = null;
+    sync = null;
   };
   xdg.mime.enable = true;
   xdg.mimeApps.enable = true;
