@@ -23,13 +23,13 @@ base=$(basename "$random_theme")
 echo "$base" > $place
 echo "Random script executed."
 cd /home/dan/.config/nix-os/
-home-manager switch --flake .#user
+home-manager switch --flake .#user --impure
 else
 	# Write the selected theme to the .currenttheme file
 	echo "$selected_theme" > $place
 	echo "Theme set to: $selected_theme"
 cd /home/dan/.config/nix-os/
-	home-manager switch --flake .#user
+	home-manager switch --flake .#user --impure
 
 	fi
 else
