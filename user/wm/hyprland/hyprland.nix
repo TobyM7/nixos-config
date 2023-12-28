@@ -10,6 +10,7 @@
     ../../app/terminal/kitty.nix
     ../../app/fnott/fnott.nix
     ../../app/nvim/nvim.nix
+    ../../app/swaylock/swaylock.nix
     ./hyprconf.nix
     ./pkg.nix
     (import ../../app/dmenu-scripts/networkmanager-dmenu.nix {
@@ -30,10 +31,4 @@
 
   home.file.".config/hypr/pyprland.json".source = ./pyprland.json;
 
-  programs.swaylock = {
-    enable = true;
-    settings = {
-      color = "#"+config.lib.stylix.colors.base00;
-    };
-  };
 }
