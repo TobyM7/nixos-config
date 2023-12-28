@@ -15,7 +15,7 @@
     name = "TobyM7"; # name/identifier
     email = "tobywjmonaghan@gmail.com"; # email (used for certain configurations)
     dotfilesDir = "~/.config/nix-os/"; # absolute path of the local repo
-    theme = "dracula"; # selcted theme from my themes directory (./themes/)
+    theme = (builtins.readFile "/home/dan/.config/nix-os/currenttheme"); # selcted theme from my themes directory (./themes/)
     wm = "hyprland"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
     wmType = "wayland"; # x11 or wayland
     browser = "brave"; # Default browser; must select one from ./user/app/browser/
