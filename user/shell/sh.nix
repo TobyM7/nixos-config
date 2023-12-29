@@ -1,9 +1,12 @@
 { config, pkgs, ... }:
 {
   programs.bash = {
-    enable = true;
+  enable = true;
+  blesh.enable = true;
+  bashrcExtra = ''
+[ -n "$PS1" ] && source $HOME/.config/bash/.bash_profile
+  '';
   };
-home.file."/home/dan/".source = ./bash/.bashrc;
 home.file.".config/bash/.bash_prompt".source = ./bash/.bash_prompt;
 home.file.".config/bash/.bash_profile".source = ./bash/.bash_profile;
 home.file.".config/bash/.aliases".source = ./bash/.aliases;
