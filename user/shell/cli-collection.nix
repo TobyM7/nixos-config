@@ -40,7 +40,7 @@
           nmcli n on
       fi
     '')
-    vim neovim
+    vim 
   ];
 
   imports = [
