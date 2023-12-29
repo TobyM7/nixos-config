@@ -55,11 +55,6 @@ up () {
     echo "Couldn't go up $limit dirs.";
   fi
 }
-alias cr='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME remove'
-alias ca='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME add'
-alias cps='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME push --set-upstream origin main'
-alias cc='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME commit'
-alias cs='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME status'
 alias gr="git remove"
 alias ga="git add " 
 alias gp="git push" 
@@ -67,9 +62,8 @@ alias gs="git status"
 alias gc="git commit" 
 alias g="git" 
 alias y=' wl-copy < $HOME/Documents/github.txt'
-alias em="/usr/bin/emacs"
 alias emacs="emacsclient -c -a 'emacs'"
-alias rem="killall emacs || echo 'Emacs server not running'; /usr/bin/emacs --daemon"
+alias rem="killall emacs || echo 'Emacs server not running'; emacs --daemon"
 alias config='/usr/bin/git --git-dir=$HOME/Documents/Hyprland-Dotfiles --work-tree=$HOME'
 alias vim='nvim'
 alias ping='gping' 
@@ -85,7 +79,6 @@ alias e="emacsclient -c -a 'emacs'"
 alias r='sudo pacman -Rsu'
 alias p='python3'
 alias u='yay '
-alias nautilus='GTK_THEME=Adwaita:dark nautilus'
 alias pcin='sudo pacman -S'
 alias pcup='sudo pacman -Syu'
 alias pcsh='sudo pacman -Ss'

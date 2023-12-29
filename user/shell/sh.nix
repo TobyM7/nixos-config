@@ -2,9 +2,11 @@
 {
   programs.bash = {
   enable = true;
-  blesh.enable = true;
   bashrcExtra = ''
+
 [ -n "$PS1" ] && source $HOME/.config/bash/.bash_profile
+
+source ~/.local/share/blesh/ble.sh
   '';
   };
 home.file.".config/bash/.bash_prompt".source = ./bash/.bash_prompt;
