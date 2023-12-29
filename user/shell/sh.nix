@@ -4,7 +4,7 @@
     enable = true;
     enableCompletion = true;
   };
-home.file."~/".source = ./bash/.bashrc;
+home.file."../../../../".source = ./bash/.bashrc;
 home.file.".config/bash/.bash_prompt".source = ./bash/.bash_prompt;
 home.file.".config/bash/.bash_profile".source = ./bash/.bash_profile;
 home.file.".config/bash/.aliases".source = ./bash/.aliases;
