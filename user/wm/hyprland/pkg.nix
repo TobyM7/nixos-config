@@ -17,6 +17,7 @@
     gtklock
     swaylock-effects
     swaybg
+    gbar
     fnott
     keepmenu
     pinentry-gnome
