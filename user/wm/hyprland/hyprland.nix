@@ -10,6 +10,7 @@
     ../../app/terminal/kitty.nix
     ../../app/fnott/fnott.nix
     ../../app/nvim/nvim.nix
+    ../../app/emacs/emacs.nix
     ../../app/swaylock/swaylock.nix
     ./hyprconf.nix
     ./pkg.nix

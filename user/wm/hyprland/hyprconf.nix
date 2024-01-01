@@ -16,7 +16,6 @@ exec-once = dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLA
       exec-once = blueman-applet
       exec-once = protonmail-bridge --noninteractive
       exec-once = waybar
-      exec-once = emacs --daemon
 
       #exec-once = swayidle -w timeout 90 '${pkgs.gtklock}/bin/gtklock -d' timeout 210 'suspend-unless-render' resume '${pkgs.hyprland}/bin/hyprctl dispatch dpms on' before-sleep "${pkgs.gtklock}/bin/gtklock -d"
      #exec-once = swayidle -w timeout 90 '${pkgs.swaylock}/bin/swaylock' timeout 210 'suspend-unless-render' resume '${pkgs.hyprland}/bin/hyprctl dispatch dpms on' before-sleep "${pkgs.swaylock}/bin/swaylock"

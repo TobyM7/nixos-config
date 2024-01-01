@@ -159,11 +159,11 @@
 ;; (setq flycheck-keymap-prefix (kbd "S-SPC l f"))
 
 (set-face-attribute 'default nil
-  :font "Victor Mono Nerd Font"
+  :font "iosevka"
   :height 110
   :weight 'medium)
 (set-face-attribute 'fixed-pitch nil
-  :font "Victor Mono Nerd Font"
+  :font "iosevka"
   :height 110
   :weight 'medium)
 ;; Makes commented text and keywords italics.
@@ -177,7 +177,7 @@
 ;; This sets the default font on all graphical frames created after restarting Emacs.
 ;; Does the same thing as 'set-face-attribute default' above, but emacsclient fonts
 ;; are not right unless I also add this method of setting the default font.
-(add-to-list 'default-frame-alist '(font . "JetBrains Mono-11"))
+(add-to-list 'default-frame-alist '(font . "iosevka"))
 
 ;; Uncomment the following line if line spacing needs adjusting.
 (setq-default line-spacing 0.12)
@@ -413,15 +413,15 @@
         
 )
 
-(use-package git-timemachine
-  :after git-timemachine
-  :hook (evil-normalize-keymaps . git-timemachine-hook)
-  :config
-    (evil-define-key 'normal git-timemachine-mode-map (kbd "C-j") 'git-timemachine-show-previous-revision)
-    (evil-define-key 'normal git-timemachine-mode-map (kbd "C-k") 'git-timemachine-show-next-revision)
-)
+;;(use-package git-timemachine
+;; :after git-timemachine
+;; :hook (evil-normalize-keymaps . git-timemachine-hook)
+;; :config
+;;   (evil-define-key 'normal git-timemachine-mode-map (kbd "C-j") 'git-timemachine-show-previous-revision)
+;;   (evil-define-key 'normal git-timemachine-mode-map (kbd "C-k") 'git-timemachine-show-next-revision)
+;;)
 
-(use-package magit)
+;; (use-package magit)
 
 (use-package helpful
   :custom

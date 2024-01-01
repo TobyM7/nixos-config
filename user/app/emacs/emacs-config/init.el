@@ -29,7 +29,7 @@
      ("https://betanews.com/feed" betanews linux)
      ("http://lxer.com/module/newswire/headlines.rss" lxer linux)
      ("https://distrowatch.com/news/dwd.xml" distrowatch linux)))
- '(package-selected-packages '(exwm)))
+ '(package-selected-packages '(seq)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

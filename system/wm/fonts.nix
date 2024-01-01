@@ -8,6 +8,7 @@
     powerline
     inconsolata
     inconsolata-nerdfont
+    victor-mono
     iosevka
     font-awesome
     ubuntu_font_family

@@ -55,6 +55,8 @@ up () {
     echo "Couldn't go up $limit dirs.";
   fi
 }
+alias ns="sudo nixos-rebuild switch --flake $HOME/.config/nix-os#system --impure"
+alias hm="home-manager switch --flake $HOME/.config/nix-os#user --impure"
 alias gr="git remove"
 alias ga="git add " 
 alias gp="git push" 
