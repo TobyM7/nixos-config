@@ -80,10 +80,6 @@ master {
 
        input {
          kb_layout = gb
-<<<<<<< HEAD
-         kb_options = caps:escape
-=======
->>>>>>> ba065d2 (changed user)
          repeat_delay = 350
          repeat_rate = 50
          accel_profile = adaptive

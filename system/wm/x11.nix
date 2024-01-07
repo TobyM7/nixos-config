@@ -12,10 +12,6 @@
     enable = true;
     layout = "gb";
     xkbVariant = "";
-<<<<<<< HEAD
-    xkbOptions = "caps:escape";
-=======
->>>>>>> ba065d2 (changed user)
     excludePackages = [ pkgs.xterm ];
     displayManager = {
       lightdm.enable = true;

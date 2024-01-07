@@ -5,42 +5,25 @@
   let
     # ---- SYSTEM SETTINGS ---- #
     system = "x86_64-linux"; # system arch
-<<<<<<< HEAD
-    hostname = "dan"; # hostname
-=======
     hostname = "nixos"; # hostname
->>>>>>> ba065d2 (changed user)
     profile = "work"; # select a profile defined from my profiles directory
     timezone = "Europe/London"; # select timezone
     locale = "en_GB.UTF-8"; # select locale
 
     # ----- USER SETTINGS ----- #
-<<<<<<< HEAD
-    username = "dan"; # username
-    name = "TobyM7"; # name/identifier
-    email = "tobywjmonaghan@gmail.com"; # email (used for certain configurations)
-    dotfilesDir = "~/.config/nix-os/"; # absolute path of the local repo
-    theme = (nixpkgs.lib.fileContents "/home/dan/.config/nix-os/currenttheme"); # selcted theme from my themes directory (./themes/)
-=======
     username = "toby"; # username
     name = "toby"; # name/identifier
     email = "tobywjmonaghan@gmail.com"; # email (used for certain configurations)
     dotfilesDir = "~/.config/nix-os/"; # absolute path of the local repo
     theme = (nixpkgs.lib.fileContents "/home/toby/.config/nix-os/currenttheme"); # selcted theme from my themes directory (./themes/)
->>>>>>> ba065d2 (changed user)
     wm = "hyprland"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
     wmType = "wayland"; # x11 or wayland
     browser = "brave"; # Default browser; must select one from ./user/app/browser/
     editor = "emacsclient"; # Default editor;
     defaultRoamDir = "Personal.p"; # Default org roam directory relative to ~/Org
     term = "kitty"; # Default terminal command;
-<<<<<<< HEAD
-    font = "Intel One Mono"; # Selected font
-    fontPkg = pkgs.intel-one-mono; # Font package
-=======
     font = "inconsolata"; # Selected font
     fontPkg = pkgs.inconsolata; # Font package
->>>>>>> ba065d2 (changed user)
 
     # editor spawning translator
     # generates a command that can be used to spawn editor inside a gui

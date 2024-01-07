@@ -30,16 +30,9 @@
   '';
 
   nixpkgs.config.allowUnfree = true;
-<<<<<<< HEAD
-boot.loader.grub = {
-enable = true;
-device = "/dev/sda";
-useOSProber = true;
-=======
 boot.loader = {
 systemd-boot.enable = true;
 efi.canTouchEfiVariables = true;
->>>>>>> ba065d2 (changed user)
 };
   # Networking
   networking.hostName = hostname; # Define your hostname.
