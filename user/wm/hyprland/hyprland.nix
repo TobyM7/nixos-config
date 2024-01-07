@@ -11,6 +11,10 @@
     ../../app/fnott/fnott.nix
     ../../app/nvim/nvim.nix
     ../../app/emacs/emacs.nix
+<<<<<<< HEAD
+=======
+    ../../lang/python/python.nix
+>>>>>>> ba065d2 (changed user)
     ../../app/swaylock/swaylock.nix
     ./hyprconf.nix
     ./pkg.nix
