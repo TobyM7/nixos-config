@@ -32,10 +32,10 @@ in
     source = ./commands.py;
     executable = true;
   };
-  home.file.".config/ranger/commands_full.py" = {
-    source = ./commands_full.py;
-    executable = true;
-  };
+  #home.file.".config/ranger/commands_full.py" = {
+   # source = ./commands_full.py;
+    #executable = true;
+  #};
   home.file.".config/ranger/colorschemes/hail.py" = {
     source = ./colorschemes/hail.py;
     executable = true;
