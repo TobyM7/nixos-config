@@ -147,7 +147,7 @@ master {
        bindm=SUPER,mouse:273,resizewindow
        bind=SUPER,SPACE,togglefloating
 
-       bind=,code:107,exec,grim -g "$(slurp)"
+       bind=,code:107,exec,grim -g "$(slurp)" #print screen 
        bind=SHIFT,code:107,exec,grim -g "$(slurp -o)"
        bind=SUPER,code:107,exec,grim
        bind=CTRL,code:107,exec,grim -g "$(slurp)" - | wl-copy
@@ -159,17 +159,11 @@ master {
        bind=SUPERCTRL,S,exec,grim -g "$(slurp)" - | wl-copy
        bind=SUPERSHIFTCTRL,S,exec,grim -g "$(slurp -o)" - | wl-copy
        
-       bind=,code:122,exec,pamixer -d 10
-       bind=,code:123,exec,pamixer -i 10
-       bind=,code:121,exec,pamixer -t
-       bind=,code:256,exec,pamixer --default-source -t
+       bind=,code:122,exec,pamixer -d 10 #VOL-
+       bind=,code:123,exec,pamixer -i 10 #V0L+
+       bind=,code:121,exec,pamixer -t #MUTE
        bind=SHIFT,code:122,exec,pamixer --default-source -d 10
        bind=SHIFT,code:123,exec,pamixer --default-source -i 10
-       bind=,code:232,exec,brightnessctl set 15-
-       bind=,code:233,exec,brightnessctl set +15
-       bind=,code:237,exec,brightnessctl --device='asus::kbd_backlight' set 1-
-       bind=,code:238,exec,brightnessctl --device='asus::kbd_backlight' set +1
-       bind=,code:255,exec,airplane-mode
 
        bind=SUPER,L,exec,swaylock
 
@@ -211,11 +205,11 @@ bind = SUPER CTRL, down, resizeactive, 0 20
 
        bind=SUPER,G,exec,pypr toggle term && hyprctl dispatch bringactivetotop
        bind=SUPER,R,exec,pypr toggle ranger && hyprctl dispatch bringactivetotop
-       bind=SUPER,code:172,exec,pypr toggle pavucontrol && hyprctl dispatch bringactivetotop
+       bind=SUPER,code:172,exec,pypr toggle pavucontrol && hyprctl dispatch bringactivetotop #F9
 
 
-       bind=SUPER,code:21,exec,pypr zoom
-       bind=SUPER,code:21,exec,hyprctl reload
+       bind=SUPER,Z,exec,pypr zoom
+       bind=SUPER,Z,exec,hyprctl reload
 bind = SUPER, T, exec, thunar
 bind = SUPERSHIFT, T, exec, ~/.config/nix-os/rofi.sh 
 bind = SUPER, O, exec, rofi -show drun

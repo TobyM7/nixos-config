@@ -26,6 +26,7 @@
     slurp
     libsForQt5.qt5.qtwayland
     qt6.qtwayland
+    bottles
     xdg-utils
     xdg-desktop-portal
     xdg-desktop-portal-gtk
