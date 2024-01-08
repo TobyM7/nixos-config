@@ -115,7 +115,7 @@ alias diff='diff --color=auto'
 alias ip='ip --color=auto'
 alias pacman='sudo pacman --color=auto'
 alias cycle='gpro-led -fx cycle all 0a'
-alias purple='g810-led -fx cycle logo 0a && gpro-led -g fkeys ff00e1 && gpro-led -g keys 8000ff && gpro-led -g functions 2500ff && gpro-led -g modifiers 008fff && gpro-led -g arrows da00ff'
+alias purple='sudo g810-led -fx cycle logo 0a && sudo gpro-led -g fkeys ff00e1 && sudo gpro-led -g keys 8000ff && sudo gpro-led -g functions 2500ff && sudo gpro-led -g modifiers 008fff && sudo gpro-led -g arrows da00ff'
 ### LS & TREE
 alias ll='exa --icons -l -T -L=1'
 command -v lsd > /dev/null && alias ls=' lsd -A  --group-dirs first' && \
