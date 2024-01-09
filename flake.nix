@@ -13,7 +13,6 @@
     # ----- USER SETTINGS ----- #
     username = "toby"; # username
     name = "toby"; # name/identifier
-    email = "tobywjmonaghan@gmail.com"; # email (used for certain configurations)
     dotfilesDir = "~/.config/nix-os/"; # absolute path of the local repo
     theme = (nixpkgs.lib.fileContents "/home/toby/.config/nix-os/currenttheme"); # selcted theme from my themes directory (./themes/)
     wm = "hyprland"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
@@ -62,7 +61,6 @@
             inherit name;
             inherit hostname;
             inherit profile;
-            inherit email;
             inherit dotfilesDir;
             inherit defaultRoamDir;
             inherit theme;
