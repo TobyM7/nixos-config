@@ -1,7 +1,7 @@
 {
   description = "Flake of LibrePhoenix";
 
-  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, stylix, eaf, eaf-browser, org-nursery, org-yaap, org-timeblock, phscroll, blocklist-hosts, rust-overlay, hyprland-plugins, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, stylix, eaf, eaf-browser, org-nursery, org-yaap, org-timeblock, phscroll, blocklist-hosts, rust-overlay, hyprland-plugins,nixvim, ... }@inputs:
   let
     # ---- SYSTEM SETTINGS ---- #
     system = "x86_64-linux"; # system arch
@@ -82,6 +82,7 @@
             inherit (inputs) org-timeblock;
             inherit (inputs) phscroll;
             inherit (inputs) hyprland-plugins;
+            inherit (inputs) nixvim;
           };
       };
     };
@@ -102,6 +103,7 @@
           inherit wm;
           inherit (inputs) stylix;
           inherit (inputs) blocklist-hosts;
+          inherit (inputs) nixvim;
         };
       };
     };
@@ -112,6 +114,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-doom-emacs.url = "github:librephoenix/nix-doom-emacs?ref=pgtk-patch";
+    nixvim.url = "github:tobym7/nixvim-config";
     stylix.url = "github:danth/stylix";
     rust-overlay.url = "github:oxalica/rust-overlay";
     eaf = {

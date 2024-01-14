@@ -2,7 +2,7 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, lib, pkgs, blocklist-hosts, username, name, hostname, timezone, locale, wm, theme, ... }:
+{ config, lib, pkgs, blocklist-hosts, username, name, hostname, timezone, locale, wm, theme,nixvim, ... }:
 {
   imports =
     [ ../../system/hardware-configuration.nix
@@ -69,6 +69,7 @@ efi.canTouchEfiVariables = true;
     git
     cryptsetup
     home-manager
+    nixvim.packages."x86_64-linux".default
   ];
 
 
