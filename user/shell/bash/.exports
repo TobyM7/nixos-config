@@ -107,3 +107,5 @@ export ELECTRUMDIR="$XDG_DATA_HOME/electrum"
 export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
 export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
 export "MICRO_TRUECOLOR=1"
+bind -m vi-insert '\C-b: cd ..\n'
+bind -m vi-insert '\C-h: cd ~\n'

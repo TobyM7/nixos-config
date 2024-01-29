@@ -27,7 +27,6 @@
     hstr
     lsd
     macchanger
-    g810-led
     feh
     pciutils
     (pkgs.writeShellScriptBin "airplane-mode" ''

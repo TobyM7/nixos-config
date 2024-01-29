@@ -785,13 +785,13 @@
       "locked": {
         "lastModified": 1705228615,
         "narHash": "sha256-R6OSymHLFHIa3xSXxWsaahiAj90lZ9gvwSsvWRVCcoQ=",
-        "owner": "tobym7",
+        "owner": "TobyM7",
         "repo": "nixvim-config",
         "rev": "514e1dd5b5ca3fa924dc542cc5e335198890da88",
         "type": "github"
       },
       "original": {
-        "owner": "tobym7",
+        "owner": "TobyM7",
         "repo": "nixvim-config",
         "type": "github"
       }

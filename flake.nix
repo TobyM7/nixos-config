@@ -44,7 +44,9 @@
       inherit system;
       config = { allowUnfree = true;
                  allowUnfreePredicate = (_: true); };
-      overlays = [ rust-overlay.overlays.default ];
+      overlays = [ rust-overlay.overlays.default 
+(final: prev: {neovim = inputs.nixvim.packages."86_64-linux".default;})
+      ];
     };
 
     # configure lib
@@ -114,7 +116,7 @@
     home-manager.url = "github:nix-community/home-manager/master";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-doom-emacs.url = "github:librephoenix/nix-doom-emacs?ref=pgtk-patch";
-    nixvim.url = "github:tobym7/nixvim-config";
+    nixvim.url = "github:TobyM7/nixvim-config";
     stylix.url = "github:danth/stylix";
     rust-overlay.url = "github:oxalica/rust-overlay";
     eaf = {
