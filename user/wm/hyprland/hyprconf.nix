@@ -4,6 +4,7 @@ wayland.windowManager.hyprland = {
 enable = true;
 xwayland = {enable = true;};
 systemdIntegration = true;
+#plugins = [hycov.packages.${pkgs.system}.hycov];
 settings = {};
 extraConfig = ''
 exec-once = dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY

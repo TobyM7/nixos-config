@@ -17,6 +17,7 @@
     unzip
     brightnessctl
     fzf
+    tor-browser
     btop
     cpufetch
     dash

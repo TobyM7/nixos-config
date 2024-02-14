@@ -85,6 +85,7 @@
             inherit (inputs) phscroll;
             inherit (inputs) hyprland-plugins;
             inherit (inputs) nixvim;
+            #inherit (inputs) hycov;
           };
       };
     };
@@ -119,6 +120,11 @@
     nixvim.url = "github:TobyM7/nixvim-config";
     stylix.url = "github:danth/stylix";
     rust-overlay.url = "github:oxalica/rust-overlay";
+    #hyprland.url = "github:hyprwm/Hyprland";
+    #hycov = {
+#	url = "github:DreamMaoMao/hycov";
+#	inputs.hyprland.follows = "hyprland";
+ #   };
     eaf = {
       url = "github:emacs-eaf/emacs-application-framework";
       flake = false;
