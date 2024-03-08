@@ -1,7 +1,7 @@
 {
   description = "Flake of LibrePhoenix";
 
-  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, stylix, eaf, eaf-browser, org-nursery, org-yaap, org-timeblock, phscroll, blocklist-hosts, rust-overlay, hyprland-plugins,nixvim, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-doom-emacs, stylix, eaf, eaf-browser, org-nursery, org-yaap, org-timeblock, phscroll, blocklist-hosts, rust-overlay, hyprland-plugins, ... }@inputs:
   let
     # ---- SYSTEM SETTINGS ---- #
     system = "x86_64-linux"; # system arch
@@ -44,9 +44,7 @@
       inherit system;
       config = { allowUnfree = true;
                  allowUnfreePredicate = (_: true); };
-      overlays = [ rust-overlay.overlays.default 
-(final: prev: {neovim = inputs.nixvim.packages."86_64-linux".default;})
-      ];
+      overlays = [ rust-overlay.overlays.default ];
     };
 
     # configure lib
@@ -84,7 +82,6 @@
             inherit (inputs) org-timeblock;
             inherit (inputs) phscroll;
             inherit (inputs) hyprland-plugins;
-            inherit (inputs) nixvim;
             #inherit (inputs) hycov;
           };
       };
@@ -106,7 +103,6 @@
           inherit wm;
           inherit (inputs) stylix;
           inherit (inputs) blocklist-hosts;
-          inherit (inputs) nixvim;
         };
       };
     };
@@ -117,7 +113,6 @@
     home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-doom-emacs.url = "github:librephoenix/nix-doom-emacs?ref=pgtk-patch";
-    nixvim.url = "github:TobyM7/nixvim-config";
     stylix.url = "github:danth/stylix";
     rust-overlay.url = "github:oxalica/rust-overlay";
     #hyprland.url = "github:hyprwm/Hyprland";
