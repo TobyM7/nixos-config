@@ -110,6 +110,6 @@ programs = {
   services.tumbler.enable = true;
   services.gvfs.enable = true;
   # It is ok to leave this unchanged for compatibility purposes
-  system.stateVersion = "22.11";
+  system.stateVersion = "23.11";
 
 }

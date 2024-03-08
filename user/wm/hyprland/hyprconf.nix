@@ -3,7 +3,7 @@
 wayland.windowManager.hyprland = {
 enable = true;
 xwayland = {enable = true;};
-systemdIntegration = true;
+systemd.enable = true;
 #plugins = [hycov.packages.${pkgs.system}.hycov];
 settings = {};
 extraConfig = ''
