@@ -111,7 +111,6 @@ master {
         blurls = gBar
   blurls = gtk-layer-shellsss
   blurls = lockscreen
-  blurls = emacs
 
          rounding = 8
          blur {

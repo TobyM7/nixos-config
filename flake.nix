@@ -18,7 +18,7 @@
     wm = "hyprland"; # Selected window manager or desktop environment; must select one in both ./user/wm/ and ./system/wm/
     wmType = "wayland"; # x11 or wayland
     browser = "brave"; # Default browser; must select one from ./user/app/browser/
-    editor = "emacsclient"; # Default editor;
+    editor = "nvim"; # Default editor;
     defaultRoamDir = "Personal.p"; # Default org roam directory relative to ~/Org
     term = "kitty"; # Default terminal command;
     font = "inconsolata"; # Selected font

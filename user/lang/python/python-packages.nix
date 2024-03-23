@@ -74,6 +74,7 @@
       tomli
       urllib3
       wcwidth
+      pygame
       websockets
       python-zbar
   ];
