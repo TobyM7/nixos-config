@@ -12,8 +12,6 @@
     bat eza fd bottom ripgrep
     rsync
     tmux
-    quickemu
-    quickgui
     htop
     hwinfo
     unzip
