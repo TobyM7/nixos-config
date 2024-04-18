@@ -21,7 +21,6 @@
     gbar
     fnott
     keepmenu
-    pinentry-gnome
     wev
     grim
     slurp

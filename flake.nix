@@ -31,20 +31,11 @@
     spawnEditor = if (editor == "emacsclient") then "emacsclient -c -a 'emacs'"
                   else (if ((editor == "vim") || (editor == "nvim") || (editor == "nano")) then "exec " + term + " -e " + editor else editor);
 
-    # create patched nixpkgs
-    nixpkgs-patched = (import nixpkgs { inherit system; }).applyPatches {
-      name = "nixpkgs-patched";
-      src = nixpkgs;
-      patches = [ ./patches/emacs-no-version-check.patch
-                  ./patches/nixos-nixpkgs-268027.patch ];
-    };
-
     # configure pkgs
-    pkgs = import nixpkgs-patched {
+    pkgs = import nixpkgs{
       inherit system;
       config = { allowUnfree = true;
                  allowUnfreePredicate = (_: true); };
-      overlays = [ rust-overlay.overlays.default ];
     };
 
     # configure lib
@@ -109,8 +100,8 @@
   };
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-23.11";
-    home-manager.url = "github:nix-community/home-manager/release-23.11";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
+    home-manager.url = "https://github.com/nix-community/home-manager/archive/master.tar.gz";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-doom-emacs.url = "github:librephoenix/nix-doom-emacs?ref=pgtk-patch";
     stylix.url = "github:danth/stylix";
