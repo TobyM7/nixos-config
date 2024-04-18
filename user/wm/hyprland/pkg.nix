@@ -6,10 +6,10 @@
     kitty
     polkit_gnome
     libva-utils
-    gsettings-desktop-schemas
     wlr-randr
     wtype
     wl-clipboard
+    chocolate-doom
     swww
     hyprland-protocols
     hyprpicker
