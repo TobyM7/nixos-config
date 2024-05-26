@@ -86,7 +86,7 @@ master {
          accel_profile = adaptive
          follow_mouse = 1
 	 touchpad {
-	    disable_while_typing=1
+	    #disable_while_typing=1
 	    natural_scroll=1
 	    clickfinger_behavior=1
 	    middle_button_emulation=0

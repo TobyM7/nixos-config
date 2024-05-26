@@ -100,8 +100,8 @@
   };
 
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-unstable";
-    home-manager.url = "https://github.com/nix-community/home-manager/archive/master.tar.gz";
+    #nixpkgs.url = "nixpkgs/nixos-unstable";
+    #home-manager.url = "github:/nix-community/home-manager/archive/master.tar.gz";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nix-doom-emacs.url = "github:librephoenix/nix-doom-emacs?ref=pgtk-patch";
     stylix.url = "github:danth/stylix";

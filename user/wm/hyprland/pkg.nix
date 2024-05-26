@@ -13,6 +13,7 @@
     swww
     hyprland-protocols
     hyprpicker
+minetest
     swayidle
     xfce.thunar
     gtklock
